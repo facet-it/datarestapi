@@ -6,7 +6,9 @@
 package be.facetit.rest.data.dataapi.forest;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -18,28 +20,28 @@ public class HistoryFactory {
     public EuropeanForestHistory createBeDuFrHistory() {
         EuropeanForestHistory bedufr = new EuropeanForestHistory();
         bedufr.setTitle("Amount of damaged trees in forests in %");
-        List<EuropeForestData> history = new ArrayList<>();
+        Map<String, EuropeForestData> history = new HashMap<>();
         
         EuropeForestData data = new EuropeForestData();
         data.setCountry("Belgium"); 
         
         List<DamagedForestPercentage> belgium = createBelgiumHistory();
         data.setDamagedForest(belgium);
-        history.add(data);
+        history.put(data.getCountry(), data);
         
         data = new EuropeForestData();
         data.setCountry("Germany"); 
         
         List<DamagedForestPercentage> germany = createGermanyHistory();
         data.setDamagedForest(germany);
-        history.add(data);
+        history.put(data.getCountry(), data);
         
         data = new EuropeForestData();
         data.setCountry("France"); 
         
         List<DamagedForestPercentage> france = createGermanyHistory();
         data.setDamagedForest(france);
-        history.add(data);
+        history.put(data.getCountry(), data);
         
         bedufr.setHistory(history);
         

@@ -6,6 +6,7 @@
 package be.facetit.rest.data.dataapi.forest;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -14,7 +15,7 @@ import java.util.List;
 public class EuropeanForestHistory {
     
     private String title;
-    private List<EuropeForestData> history;
+    private Map<String,EuropeForestData> history;
 
     public String getTitle() {
         return title;
@@ -24,11 +25,11 @@ public class EuropeanForestHistory {
         this.title = title;
     }
 
-    public List<EuropeForestData> getHistory() {
+    public Map<String,EuropeForestData> getHistory() {
         return history;
     }
 
-    public void setHistory(List<EuropeForestData> history) {
+    public void setHistory(Map<String,EuropeForestData> history) {
         this.history = history;
     }
     
