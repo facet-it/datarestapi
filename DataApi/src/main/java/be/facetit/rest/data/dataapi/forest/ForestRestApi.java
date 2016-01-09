@@ -12,7 +12,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/forest")
+@Path("forest")
 public class ForestRestApi {
     
     private HistoryFactory factory = new HistoryFactory();
