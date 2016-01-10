@@ -1,0 +1,6 @@
+be\facetit\rest\data\dataapi\forest\EuropeForestData.class
+be\facetit\rest\data\dataapi\forest\EuropeanForestHistory.class
+be\facetit\rest\data\dataapi\MyResource.class
+be\facetit\rest\data\dataapi\forest\DamagedForestPercentage.class
+be\facetit\rest\data\dataapi\forest\ForestRestApi.class
+be\facetit\rest\data\dataapi\forest\HistoryFactory.class
