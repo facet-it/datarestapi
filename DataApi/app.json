@@ -1,0 +1,5 @@
+{
+  "name": "facetdata",
+  "description": "mini app for giving forest related open data",
+  "image": "heroku/java"
+}
