@@ -39,7 +39,7 @@ public class HistoryFactory {
         data = new EuropeForestData();
         data.setCountry("France"); 
         
-        List<DamagedForestPercentage> france = createGermanyHistory();
+        List<DamagedForestPercentage> france = createFranceHistory();
         data.setDamagedForest(france);
         history.put(data.getCountry(), data);
         
